@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.irshad.com.myapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wiki_app"
+        android:label="WikiSearch"
+        android:roundIcon="@drawable/wiki_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="example.irshad.com.myapp.list.WikiListActivity"
+            android:label="Search"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="example.irshad.com.myapp.detail.WebViewActivity"
+            android:label="Detail"
+            android:screenOrientation="portrait" />
+        <activity android:name="example.irshad.com.myapp.splash.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
